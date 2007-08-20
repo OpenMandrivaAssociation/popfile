@@ -16,7 +16,7 @@ Source4:	popfile.init.bz2
 URL:		http://popfile.sourceforge.net/
 PreReq:		rpm-helper
 BuildRequires:	perl
-BuildPreReq:	unzip
+BuildRequires:	unzip
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildarch: 	noarch
 

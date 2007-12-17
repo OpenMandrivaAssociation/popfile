@@ -14,7 +14,7 @@ Source2:	popfile_32x32.png
 Source3:	popfile_48x48.png
 Source4:	popfile.init.bz2
 URL:		http://popfile.sourceforge.net/
-PreReq:		rpm-helper
+Requires(post,preun):	rpm-helper
 BuildRequires:	perl
 BuildRequires:	unzip
 Buildarch: 	noarch

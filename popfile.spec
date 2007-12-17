@@ -17,7 +17,6 @@ URL:		http://popfile.sourceforge.net/
 PreReq:		rpm-helper
 BuildRequires:	perl
 BuildRequires:	unzip
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildarch: 	noarch
 
 %description

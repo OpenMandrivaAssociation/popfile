@@ -1,6 +1,6 @@
 %define name	popfile
 %define version	0.22.4
-%define release	%mkrel 3
+%define release	%mkrel 4
 
 Summary:	Automatic Email Classification
 Name:		%{name}

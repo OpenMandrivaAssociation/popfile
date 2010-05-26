@@ -1,6 +1,6 @@
 %define name	popfile
-%define version	0.22.4
-%define release	%mkrel 5
+%define version	1.1.1
+%define release	%mkrel 1
 
 Summary:	Automatic Email Classification
 Name:		%{name}
@@ -8,12 +8,12 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		Networking/Mail
-Source0:	popfile-%{version}.zip
+Source0:	http://getpopfile.org/downloads/popfile-%{version}.zip
 Source1:	popfile_16x16.png
 Source2:	popfile_32x32.png
 Source3:	popfile_48x48.png
 Source4:	popfile.init.bz2
-URL:		http://popfile.sourceforge.net/
+URL:		http://getpopfile.org/	
 Requires(post,preun):	rpm-helper
 BuildRequires:	perl
 BuildRequires:	unzip

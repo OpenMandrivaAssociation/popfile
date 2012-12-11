@@ -1,6 +1,6 @@
 %define name	popfile
 %define version	1.1.1
-%define release	%mkrel 1
+%define release	2
 
 Summary:	Automatic Email Classification
 Name:		%{name}
@@ -17,7 +17,6 @@ URL:		http://getpopfile.org/
 Requires(post,preun):	rpm-helper
 BuildRequires:	perl
 BuildRequires:	unzip
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildarch: 	noarch
 
 %description
@@ -116,10 +115,52 @@ rm -f %{buildroot}%{_datadir}/%{name}/v%{version}.change
 %defattr(-,root,root)
 %doc *.change
 %config(noreplace) %attr(0755,root,root) %{_initrddir}/%{name}
-%{_miconsdir}/*
 %{_iconsdir}/*
-%{_liconsdir}/*
 %{_datadir}/%{name}
 %{_datadir}/applications/mandriva-%{name}.desktop 
 
+
+
+
+%changelog
+* Wed May 26 2010 Juan Luis Baptiste <juancho@mandriva.org> 1.1.1-1mdv2011.0
++ Revision: 546307
+- Updated to 1.1.1
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.22.4-5mdv2010.0
++ Revision: 430761
+- rebuild
+
+* Fri Aug 01 2008 Thierry Vignaud <tv@mandriva.org> 0.22.4-4mdv2009.0
++ Revision: 259216
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.22.4-3mdv2009.0
++ Revision: 247136
+- rebuild
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 0.22.4-1mdv2008.1
++ Revision: 136428
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - fix prereq on rpm-helper
+    - kill re-definition of %%buildroot on Pixel's request
+    - kill desktop-file-validate's 'warning: key "Encoding" in group "Desktop Entry" is deprecated'
+    - buildrequires obsoletes buildprereq
+
+
+* Fri Mar 16 2007 Nicolas Lécureuil <neoclust@mandriva.org> 0.22.4-1mdv2007.1
++ Revision: 144975
+- Add xdg menu
+- Import popfile
+
+* Fri Mar 10 2006 Jerome Soyer <saispo@mandriva.org> 0.22.4-1mdk
+- New release 0.22.4
+
+* Sun Dec 25 2005 Oden Eriksson <oeriksson@mandriva.com> 0.22.3-1mdk
+- 0.22.3
+
+* Sat Nov 13 2004 Oden Eriksson <oeriksson@mandrakesoft.com> 0.22.1-1mdk
+- 0.22.1
 

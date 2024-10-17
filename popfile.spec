@@ -13,7 +13,7 @@ Source1:	popfile_16x16.png
 Source2:	popfile_32x32.png
 Source3:	popfile_48x48.png
 Source4:	popfile.init.bz2
-URL:		http://getpopfile.org/	
+URL:		https://getpopfile.org/	
 Requires(post,preun):	rpm-helper
 BuildRequires:	perl
 BuildRequires:	unzip
